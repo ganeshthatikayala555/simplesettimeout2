@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <button onclick="myfunction()">click me</button>
+        <p>Example on settimeout function</p>
+        <p id="dem"></p>
+    </body>
+    <script>
+        function myfunction(){
+            setTimeout(function() {
+                const element = document.getElementById("dem");
+element.style.color = "red";
+element.style.fontSize = "20px";
+
+    element.innerHTML = "WELCOME";
+  }, 2000); // 2000 milliseconds = 2 seconds
+        }
+    </script>
+</html>
